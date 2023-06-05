@@ -7,8 +7,8 @@ for a in "${array[@]}"; do
   for b in {1..3}; do
     num1=$(date +%M)
     num2=$(date +%S)
-    echo icpc -std=c++17 -O$b $a lab.cpp -o file-$num1-$num2
-    icpc -std=c++17 -O$b $a lab.cpp -o file-$num1-$num2
+    echo icpc -std=c++17 -O$b $a lab_3.cpp -o file-$num1-$num2
+    icpc -std=c++17 -O$b $a lab_3.cpp -o file-$num1-$num2
     echo "$a $b:"
     time ./file-$num1-$num2
   done 
